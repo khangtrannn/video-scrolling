@@ -5,14 +5,18 @@ import { Component, ElementRef, HostListener, OnInit, Renderer2, inject, viewChi
   standalone: true,
   imports: [],
   template: `
+  <div style="background: black; position: fixed; top: 0; width: 100%;" >
+    <img width="150px" style="padding: 1rem; display: flex; margin: 0 auto;" src="angular-logo.svg" />
+  </div>
     <div style="
       height: 300vh;
       background-color: black;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
     ">
-      <img #image width="700" />
+      <img style="width: 80%; max-width: 700px;" #image />
     </div>
   `,
 })
